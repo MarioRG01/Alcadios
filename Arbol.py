@@ -32,6 +32,3 @@ def MinMax(node, i_depth, i_playerNum):
         if (abs(maxsize*i_playerNum-i_val)<abs(maxsize*i_playerNum - i_bestValue)):
             i_bestValue = i_val
     return i_bestValue
-
-def WinCheck(i_beans, i_playerNum):
-    
