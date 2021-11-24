@@ -80,14 +80,14 @@ def WinCheck404(i_beans, i_playerNum):
         print ("*"*30)
         if i_playerNum > 0:
             if i_beans == 0:
-                print ("\tEntra para ver los resultados...:")
+                print ("\tEntra para ver los resultados... https://www.youtube.com/watch?v=dQw4w9WgXcQ:")
             else:
-                print ("\tEntra para ver los resultados...: ")
+                print ("\tEntra para ver los resultados... https://www.youtube.com/watch?v=dQw4w9WgXcQ: ")
         else:
             if i_beans == 0:
-                print ("\tEntra para ver los resultados...: ")
+                print ("\tEntra para ver los resultados... https://www.youtube.com/watch?v=dQw4w9WgXcQ: ")
             else:
-                print ("\tEntra para ver los resultados...: ")
+                print ("\tEntra para ver los resultados... https://www.youtube.com/watch?v=dQw4w9WgXcQ: ")
         print ("*"*30)
         return 0
     return 1       
