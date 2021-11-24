@@ -25,7 +25,7 @@ class Node(object):
         elif (value < 0):
             return maxsize * -self.i_playerNum #this bot
         return 0
-    
+
 def MinMax(node, i_depth, i_playerNum):
     if (i_depth == 0) or (abs(node.i_value) == maxsize): #Encontramos la profunidad 0 o la mejor opción?
         return node.i_value #Pasar el mejor nodo a el nodo actual
@@ -109,7 +109,7 @@ if __name__ == '__main__':
                 print ("\n%d beans remain. How many will you pick up?" %i_beanTotal)
                 i_choice = int(input("\n1, 2 or 3:                 "))
                 if ((i_choice >0 and i_choice<4)):   
-                  if ((dificultad < 0 and dificultad > 50)):  
+                  if ((dificultad > 0 and dificultad < 50)):  
                      i_beanTotal -= int(float(i_choice)) #Guardar la decisión del usuario
                       ## Turno de la computadora
                      if WinCheck(i_beanTotal, i_curPlayer):
@@ -131,7 +131,7 @@ if __name__ == '__main__':
                         WinCheck(i_beanTotal, i_curPlayer)
                         i_curPlayer *= -1 #cambiar jugador
                         
-                  elif((dificultad < 50 and dificultad > 100)):
+                  elif((dificultad > 50 and dificultad < 100)):
                      i_beanTotal -= int(float(i_choice)) #Guardar la decisión del usuario
                       ## Turno de la computadora
                      if WinCheck(i_beanTotal, i_curPlayer):
